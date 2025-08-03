@@ -216,7 +216,7 @@ footer a {
 @media (max-width: 599px) {
   /* Stack nav vertically */
   nav ul {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
   }
