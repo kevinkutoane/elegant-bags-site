@@ -211,6 +211,114 @@ footer a {
 .tablet-desktop {
   display: none;
 }
+/* === MOBILE VIEWPORT === */
+
+@media (max-width: 599px) {
+  /* Stack nav vertically */
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav li {
+    margin: 5px 0;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav li:last-child {
+    border-bottom: none;
+  }
+
+  header {
+    display: block;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  header img {
+    display: block;
+    margin: 10px auto;
+    max-height: 90px;
+  }
+
+  .hero {
+    height: 250px;
+    background-position: center center;
+  }
+
+  .hero .overlay {
+    font-size: 1.3rem;
+    padding: 15px 20px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .product {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product img {
+    width: 80%;
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+
+  .product-details {
+    margin-left: 0;
+  }
+
+  .product-video {
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+  }
+
+  .map {
+    width: 100%;
+    height: 280px;
+  }
+
+  footer {
+    font-size: 0.95rem;
+    padding: 15px 10px;
+  }
+
+  h2, h3 {
+    font-size: 1.2rem;
+  }
+
+  /* Style .mobile class */
+  .mobile {
+    font-size: 1rem;
+    display: block;
+    color: #d63447;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  /* Optional: Hide tablet-desktop class */
+  .tablet-desktop {
+    display: none;
+  }
+}
+
 
 /* === TABLET VIEWPORT === */
 @media (min-width: 600px) and (max-width: 1024px) {
